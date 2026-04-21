@@ -1,16 +1,71 @@
-# app1_c112151135_final
+# 時鐘 App
 
-A new Flutter project.
+一個以 Flutter 開發的多功能時鐘應用程式，包含世界時鐘、鬧鐘、計時器與碼表四大功能。
 
-## Getting Started
+## 功能介紹
 
-This project is a starting point for a Flutter application.
+### 1. 世界時鐘
+- 預設顯示台灣時間（UTC+8）
+- 最多可新增 5 個城市時鐘
+- 提供 15 個預設城市（台灣、東京、首爾、北京、香港、新加坡、曼谷、倫敦、巴黎、德國、莫斯科、杜拜、華盛頓、洛杉磯、舊金山）
+- 每秒即時更新，顯示日期、星期與時間
+- 可刪除已新增的城市時鐘
 
-A few resources to get you started if this is your first Flutter project:
+### 2. 鬧鐘
+- 使用時間選擇器設定鬧鐘時間
+- 可選擇重複響鈴的星期（週一～週日）
+- 支援開關切換（啟用／停用）
+- 可新增多個鬧鐘並個別管理
+- ⚠️ 注意：目前尚未實作鈴聲／通知功能
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 3. 計時器
+- 以 10 秒為單位調整倒數時間（上下箭頭按鈕）
+- 支援開始、暫停、停止操作
+- 倒數結束後顯示「時間到！」對話框
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 4. 碼表
+- 支援開始、停止、重置操作
+- 顯示精度為 0.1 秒
+
+## 環境需求
+
+- Flutter SDK `^3.9.2`（含 Dart SDK）
+- Android Studio 或 VS Code（建議安裝 Flutter / Dart 外掛）
+
+## 開始使用
+
+```bash
+# 1. 複製專案
+git clone https://github.com/AndyLin7533/APP1_C112151135_final.git
+cd APP1_C112151135_final
+
+# 2. 安裝相依套件
+flutter pub get
+
+# 3. 執行應用程式
+flutter run
+```
+
+## 支援平台
+
+| 平台 | 支援狀況 |
+|------|---------|
+| Android | ✅ |
+| iOS | ✅ |
+| Web | ✅ |
+| Windows | ✅ |
+| macOS | ✅ |
+| Linux | ✅ |
+
+## 專案結構
+
+```
+lib/
+└── main.dart       # 所有功能均實作於此單一檔案
+```
+
+## 相依套件
+
+| 套件 | 版本 | 用途 |
+|------|------|------|
+| cupertino_icons | ^1.0.8 | iOS 風格圖示 |
